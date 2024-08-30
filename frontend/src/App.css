@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.chat-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  height: 300px;
+  overflow-y: scroll;
+}

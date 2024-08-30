@@ -1,0 +1,131 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 550px; 
+    background-color: #6A5BC2;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .chat-container h2{
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
+  .messages-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    overflow: hidden; 
+    border-radius: 30px;
+    flex: 1;
+    background: linear-gradient(to right, #E0E0E0 40%, #ffffff);
+  
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+  }
+  
+  .messages {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative; /* Positioning context for input container */
+    width: 100%;
+  }
+  
+  .userMessage {
+    padding: 12px 16px;
+    margin: 8px 0;
+    max-width: 70%;
+    min-width: 60px;
+    word-wrap: break-word;
+    align-self: flex-end;
+    display: inline-block;
+    position: relative;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+    border-top-right-radius: 5px;
+  }
+  
+  
+  .userMessage.sender {
+    background-color: #6A5BC2;
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .userMessage.receiver {
+    background-color: #FDFDFD;
+    margin-right: auto;
+    text-align: left;
+    color: black;
+  }
+  
+  
+  .input-container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  textarea[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 35px;
+    flex: 1;
+    background-color: #E2E2E2;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    resize: none;
+    height: 20px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #6A5BC2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 10px; /* Space between the SVG and the button text */
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: rgb(195, 183, 183);
+    text-align: right;
+    margin-top: 4px;
+  }
+  
+  
+  button svg {
+    width: 15px;
+    height: 15px; 
+  }
+  
+  button svg path {
+    fill: #fff; 
+  }
+  
+  button:hover {
+    background-color: #786eb0;
+  }
+  
